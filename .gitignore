@@ -1,64 +1,70 @@
-# =============== #
-# Unity generated #
-# =============== #
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-[Ll]ogs/
-[Uu]ser[Ss]ettings/
-[Mm]emoryCaptures/
-[Rr]ecordings/
-
-# =============== #
-# IDE / Editor    #
-# =============== #
-# Visual Studio
-.vs/
-*.csproj
-*.unityproj
-*.sln
-*.suo
-*.tmp
-*.user
-*.userprefs
-*.pidb
-*.booproj
-*.svd
-
-# VS Code
-.vscode/
-
-# Rider
-.idea/
-*.sln.iml
-
-# =============== #
-# OS generated    #
-# =============== #
+# ===================
+# 通用忽略
+# ===================
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
+*.log
+.env
+.env.local
 
-# =============== #
-# Build results   #
-# =============== #
-*.apk
-*.aab
-*.unitypackage
-*.app
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
 
-# Crashlytics
-crashlytics-build.properties
+# ===================
+# Frontend (Vue3)
+# ===================
+DVMSFront/node_modules/
+DVMSFront/dist/
+DVMSFront/.vite/
+DVMSFront/coverage/
+DVMSFront/*.local
 
-# Packed Addressables
-/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+# ===================
+# Unity
+# ===================
+DVMSUnity/[Ll]ibrary/
+DVMSUnity/[Tt]emp/
+DVMSUnity/[Oo]bj/
+DVMSUnity/[Bb]uild/
+DVMSUnity/[Bb]uilds/
+DVMSUnity/[Ll]ogs/
+DVMSUnity/[Uu]ser[Ss]ettings/
+DVMSUnity/[Mm]emoryCaptures/
+DVMSUnity/[Rr]ecordings/
+DVMSUnity/.vs/
+DVMSUnity/*.csproj
+DVMSUnity/*.sln
+DVMSUnity/*.userprefs
 
-# Temporary auto-generated Android Assets
-/[Aa]ssets/[Ss]treamingAssets/aa.meta
-/[Aa]ssets/[Ss]treamingAssets/aa/*
+# 但保留必要的 Unity 文件
+!DVMSUnity/Packages/manifest.json
+!DVMSUnity/Packages/packages-lock.json
+
+# ===================
+# Backend (Spring Boot)
+# ===================
+DVMSBack/target/
+DVMSBack/.mvn/
+DVMSBack/mvnw
+DVMSBack/mvnw.cmd
+DVMSBack/*.iml
+DVMSBack/.classpath
+DVMSBack/.project
+DVMSBack/.settings/
+
+# ===================
+# Database
+# ===================
+DVMSBataBase/*.backup
+DVMSBataBase/*.dump
+
+# ===================
+# 构建输出（通过 CI/CD 生成）
+# ===================
+build/
+dist/
+*.zip
+*.tar.gz

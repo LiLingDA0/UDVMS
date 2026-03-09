@@ -39,7 +39,7 @@
 # Unity 特定资源
 *.asset filter=lfs diff=lfs merge=lfs -text
 *.unitypackage filter=lfs diff=lfs merge=lfs -text
-*.prefab filter=lfs diff=lfs merge=lfs -text  # 如果包含大量序列化数据
+*.prefab filter=lfs diff=lfs merge=lfs -text  
 
 # 二进制库文件
 *.dll filter=lfs diff=lfs merge=lfs -text

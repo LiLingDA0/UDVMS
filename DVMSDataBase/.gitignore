@@ -1,0 +1,23 @@
+# =============== #
+# IDE / Editor    #
+# =============== #
+# Visual Studio
+.vs/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+# VS Code
+.vscode/
+
+# Rider
+.idea/
+*.sln.iml
+

@@ -58,8 +58,8 @@ DVMSBack/.settings/
 # ===================
 # Database
 # ===================
-DVMSBataBase/*.backup
-DVMSBataBase/*.dump
+DVMSDataBase/*.backup
+DVMSDataBase/*.dump
 
 # ===================
 # 构建输出（通过 CI/CD 生成）
